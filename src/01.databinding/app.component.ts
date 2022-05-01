@@ -7,4 +7,12 @@ import { Component } from "@angular/core";
   })
 export class AppComponent{
     name:string = "Maulik";
+
+    updateName(n:string) {
+      this.name=n;
+    }
+
+    doTask() {
+      console.log("Method called");
+    }
 }

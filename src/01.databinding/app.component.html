@@ -1,2 +1,17 @@
 <h1>Data binding</h1>
 Name: <mark>  {{name}} </mark>
+
+<br/>
+
+<input type="text" [value]="name" #inputElement (keyup) = "updateName(inputElement.value)"/>
+
+<!--
+<br/>
+<button (click) = "updateName(inputElement.value)">Read Name</button>
+-->
+
+<br/>
+<button (click) = "doTask()">Read Name</button>
+
+<hr/>
+<input [(ngModel)]="name" />  <!-- NOTE: When we use ngModel, we don't even need the updateName method -->
