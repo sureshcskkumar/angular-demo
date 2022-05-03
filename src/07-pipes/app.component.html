@@ -7,6 +7,16 @@ Username -> Lowercase: {{users[0].username | lowercase}} <br/>
 DOB: {{users[0].dob}} <br/>
 DOB -> date: {{users[0].dob|date}} <br/>
 DOB -> date: {{users[0].dob|date:"dd-MM-yyyy@hh:mm:ss"}} <br/>
+
+DOB -> date: {{users[0].dob|date:"yyyy-MM-dd"}} <br/>
+DOB -> date: {{users[0].dob|date:"yyyy_dd#MM"}} <br/>
+DOB -> date: {{users[0].dob|date:"yyyy_dd#MMM"}} <br/>
+DOB -> date: {{users[0].dob|date:"yyyy_dd#MMMM"}} <br/>
+
+DOB -> date: {{users[0].dob|date:"yyyy_d#MMMM"}} <br/>
+DOB -> date: {{users[0].dob|date:"yy_d#MMMM"}} <br/>
+
+
 <hr/>
 
 <p *ngIf="users.length==0">Database is empty</p>
