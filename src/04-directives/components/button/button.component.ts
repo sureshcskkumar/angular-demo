@@ -8,9 +8,10 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 export class ButtonComponent implements OnChanges{
       @Input()
       color:string = "black";
+      num:number = 5;
       myCss={
           "color":this.color
-      }
+      };
       constructor() {
           console.log("This is button component:" + this.color);
       }
