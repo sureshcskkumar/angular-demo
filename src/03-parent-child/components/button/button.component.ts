@@ -7,7 +7,7 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 })
 export class ButtonComponent implements OnChanges{
       @Input()
-      color:string = "black"
+      color:string = "black";
       constructor() {
           console.log("This is button component:" + this.color);
       }
