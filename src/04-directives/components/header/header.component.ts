@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isValid:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  doToggle() {
+    this.isValid = !this.isValid;
+  }
 }

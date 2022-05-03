@@ -1,9 +1,11 @@
 <header>
     <h1 align="center">My App Name</h1>
     <div align="right">
-        <app-button [color]="'green'">Login</app-button>
-        <app-button [color]="'green'">Register</app-button>
-        <app-button [color]="'red'">Logout</app-button>
+        <app-button *ngIf="!isValid" [color]="'green'">Login</app-button>
+        <app-button *ngIf="!isValid" [color]="'green'">Register</app-button>
+        <app-button *ngIf="isValid" [color]="'red'">Logout</app-button>
         <app-button [color]="'blue'">Payment</app-button>
+        <button (click)="doToggle()">Toggle</button>
     </div>
+
 </header>
